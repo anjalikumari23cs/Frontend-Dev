@@ -1,0 +1,31 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container{
+    background-color:black;
+    padding:25px;
+    width:350px;
+    border-radius: 10px;
+}
+.text{
+    margin-bottom: 20px;
+    padding-left:280px;
+}
+.text p{
+    color:white;
+    font-size: 1.5rem;
+}
+.keys{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+}
