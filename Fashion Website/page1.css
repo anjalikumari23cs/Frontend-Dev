@@ -44,7 +44,7 @@ header button{
 }
 .c1 h1{
     font-size:3rem;
-    color:rgb(3, 84, 3);
+    color:#224F34;
 }
 .c1 p{
     font-size:2rem;
@@ -61,11 +61,11 @@ header button{
     text-align: center;
 }
 .c1 img{
-    border:solid rgb(64, 107, 64);
+    
     border-radius: 20%;
     border-end-start-radius: 10%;
     border-top-right-radius: 5%;
-    background-color: rgb(64, 107, 64);
+    background-color: #6BC785;
 }
 
 .c2{
@@ -80,16 +80,16 @@ header button{
     gap:20px;
 }
 .img1, .img2, .img3{
-    width:200px;
-    height:250px;
-    background-color: #C2EFD4;
+    width:250px;
+    height:350px;
+    background-color: #93B9A2;
     margin:10px;
 }
 .img3{
-    background-color:beige;
+    background-color:#DDECE2;
 }
 .img2{
-    background-color:#caf5da;
+    background-color:#A9D4BA;
 }
 .shop{
     margin-top: 1%;
@@ -100,4 +100,75 @@ header button{
     background-color: #cbf7dd;
     height:30px;
     width:70px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    margin:10px;
+}
+.section3{
+    color:black;
+}
+.i1, .i2, .i3, .i4,
+.i5, .i6, .i7, .i8{
+    width:200px;
+    height:250px;
+    margin:10px;
+}
+.i2{
+    background-color: #EAEBF0;
+}
+.i8{
+    background-color: #DDECE2;
+}
+.section4{
+    display:flex;
+    margin-top:70px;
+    margin-left:100px;
+    margin-right:100px;
+    background-color: #C2EFD4;
+}
+
+.des{
+    padding-top:10%;
+}
+.des h2{
+    color:#224F34;
+    font-style: bold;
+    font-weight: 3000;
+    margin:10px;
+}
+.des p{
+    color:#224F34;
+    padding: 10px 0 ;
+    margin:10px;
+    padding-right:50px;
+}
+.des button{
+    border:solid #FFFFFF;
+    background-color: #FFFFFF;
+    height:40px;
+    width:45px;
+    text-align: center;
+    margin:0 10px;
+}
+.des  button.buy{
+    background-color: #224F34;
+    height:15%;
+    width:20%;
+    color:white;
+    text-size-adjust: inherit;
+    border:none ;
+    margin-top:20px;
+}
+
+.last2 h1{
+    color:#224F34;
+    text-align: center;
+    margin:70px;
+}
+.last2 div{
+    display:flex;
 }
