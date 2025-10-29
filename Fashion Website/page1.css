@@ -73,6 +73,31 @@ header button{
     color:rgb(3, 84, 3);
     margin:40px;
 }
-.img1{
-    border:black;
+.images{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    gap:20px;
+}
+.img1, .img2, .img3{
+    width:200px;
+    height:250px;
+    background-color: #C2EFD4;
+    margin:10px;
+}
+.img3{
+    background-color:beige;
+}
+.img2{
+    background-color:#caf5da;
+}
+.shop{
+    margin-top: 1%;
+    margin-left: 48%;
+    justify-content: center;
+    text-align: center;
+    border:2px solid black;
+    background-color: #cbf7dd;
+    height:30px;
+    width:70px;
 }
