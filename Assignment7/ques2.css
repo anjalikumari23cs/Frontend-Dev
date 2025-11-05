@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  color: white;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.box1 {
+    width: 200px;
+    height: 150px;
+    background-color: #007bff;
+
+}
+
+.box2 {
+    width: 30%;
+    height: 20vh;
+    background-color: #28a745;
+    min-height: 100px;
+    max-width: 300px;
+
+}
+
+.box3 {
+    width: 15em;
+    height: 30vh;
+    background-color: #dc3545;
+    min-height: 150px;
+    max-width: 400px;
+
+}
