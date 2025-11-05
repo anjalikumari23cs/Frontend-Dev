@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header,
+main,
+footer {
+    padding: 20px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main .image {
+    
+    border: solid black;
+    border-radius: 20%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+}
