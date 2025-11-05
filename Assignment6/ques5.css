@@ -1,0 +1,28 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  padding: 40px;
+  background: #eee;
+  animation: fadeIn 1s ease-in;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.highlight {
+  background: #cce5ff;
+  transform: scale(1.1);
+}
+@media (max-width: 750px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+}
