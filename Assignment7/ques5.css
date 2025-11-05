@@ -1,0 +1,92 @@
+/* General styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+
+header,
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Attribute Selectors */
+/* Select input with type="text" */
+input[type="text"] {
+    border: 2px solid #007bff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Select anchor tags starting with https */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* Pseudo-classes */
+/* Highlight list items on hover */
+.demo-list li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Highlight input when focused */
+input:focus {
+    outline: none;
+    border-color: #28a745;
+}
+
+/* Style every 2nd item in the list */
+.demo-list li:nth-child(2n) {
+    color: #dc3545;
+}
+
+/* Pseudo-elements */
+/* Add content before list items */
+.demo-list li::before {
+    content: "👉 ";
+}
+
+/* Add content after list items */
+.demo-list li::after {
+    content: " ✔";
+    color: #28a745;
+}
+
+/* Combinators */
+/* Child combinator: direct child p inside .parent */
+.parent>p {
+    background: #ffeeba;
+    padding: 5px;
+}
+
+/* Adjacent sibling: span immediately after p */
+.parent p+span {
+    background: #cce5ff;
+    padding: 5px;
+}
+
+/* General sibling: all span siblings after p */
+.parent p~span {
+    border: 1px dashed #007bff;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+/* Descendant combinator: any p inside .parent */
+.parent div p {
+    background: #d4edda;
+    padding: 5px;
+}
