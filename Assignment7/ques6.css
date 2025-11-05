@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+header, footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+
+.transform-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.transform-box {
+  width: 150px;
+  height: 150px;
+  background: #007bff;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+/* Hover Transformations */
+.rotate:hover {
+  transform: rotate(15deg);
+}
+
+.scale:hover {
+  transform: scale(1.2);
+}
+
+.translate:hover {
+  transform: translateY(-20px);
+}
+
+.skew:hover {
+  transform: skew(15deg, 5deg);
+}
