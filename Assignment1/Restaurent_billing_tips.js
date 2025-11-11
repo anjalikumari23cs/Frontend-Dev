@@ -1,0 +1,12 @@
+let baseCost = 2200;     
+let isDining = true;    
+let gst = baseCost * 0.05;
+let tax = isDining? baseCost * 0.10 : 0;
+let subtotal = baseCost + gst + tax;
+let tip = subtotal > 2000 ? subtotal * 0.08 : 0;
+let total = subtotal + tip;
+console.log(`Base Amount: ${baseCost}`);
+console.log(`GST: ${gst.toFixed(2)}`);
+console.log(`Service Tax: ${tax.toFixed(2)}`);
+console.log(`Tip: ${tip.toFixed(2)}`);
+console.log(`Final Total: ${total.toFixed(2)}`);
