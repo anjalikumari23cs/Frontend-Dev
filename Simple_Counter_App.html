@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Counter App</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #counterid {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+        button {
+            font-size: 24px;
+            margin: 5px;
+            padding: 10px 20px;
+        }
+        button.green {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button.red {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button.reset {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Counter App</h1>
+    <p id="counterid">0</p>
+    <button onclick="increment()" class="green">Increment</button>
+    <button onclick="decrement()"class="red">Decrement</button> <br>
+    <button onclick="zero()" class="reset">Reset</button>
+    <script>
+        let counter = 0;
+        let counterDisplay = document.getElementById("counterid");
+
+        function update() {
+            counterDisplay.innerText = counter;
+        }
+
+        function increment() {
+            counter++;
+            update();
+        }
+
+        function decrement() {
+            counter--;
+            update();
+        }      
+        function zero() {
+            counter = 0;
+            update();
+        } 
+    </script>
+</body>
+</html>
