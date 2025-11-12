@@ -17,4 +17,5 @@
 // console.log(0==false);
 
 //conversion
-let a=String
+let a=String(str2);
+let b=number(num2);
