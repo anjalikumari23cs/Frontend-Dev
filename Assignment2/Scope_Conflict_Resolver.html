@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope Conflict Resolver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: blue;
+            color:white;
+            border:none;
+        }
+        #id {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color:green
+        }
+    </style>
+</head>
+<body>
+    <h1>Scope Conflict Resolver</h1>
+    <p id="id"></p>
+    <button onclick="calculatesalary(false)">Salary without bonus</button>
+    <button onclick="calculatesalary(true)">Salary with bonus</button>
+    <script>
+        let p=document.getElementById("id");
+        var bonus=5000;
+        function calculatesalary(isPermanet){
+            var salary=40000;
+            if(isPermanet){
+                salary=salary+bonus;
+            }
+            p.innerHTML="Salary: "+salary;
+        }
+    </script>
+</body>
+</html>
