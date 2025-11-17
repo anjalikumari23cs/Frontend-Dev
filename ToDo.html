@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:aliceblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        input {
+            padding: 10px;
+            margin-right: 10px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-size: 16px;
+
+        }
+        div{
+            padding:20px;
+            background-color:white;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color:aliceblue;
+            margin: 5px 0;
+            padding: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+        li button {
+            background-color: #dc3545;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Simple TODO App</h1>
+    <input type="text" id="inputdata" placeholder="Enter your task">
+    <button onclick="submit()">Add Task</button>
+    <ul id="ul">
+    </ul>
+    </div>
+    <script>
+        function submit(){
+            let inputdata=document.getElementById("inputdata").value;
+            let li=document.createElement("li");
+            let btn=document.createElement("button");
+            btn.innerText="Delete";
+
+            li.innerText=inputdata;
+            li.appendChild(btn);
+            li.addEventListener("click",function(){
+                li.remove();
+            });
+
+            let ul=document.getElementById("ul");
+            ul.appendChild(li);
+            
+        }
+    </script>
+</body>
+</html>
