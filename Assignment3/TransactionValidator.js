@@ -4,6 +4,8 @@ const transactions = [
 { id: 3 },
 null
 ];
+let fail=0;
+let succ=0;
 for (let i = 0; i < transactions.length; i++) {
     try{
         if (transactions[i] == null) {
@@ -15,9 +17,14 @@ for (let i = 0; i < transactions.length; i++) {
         if (transactions[i].amount < 0) {
             throw new Error(`Transaction at index ${i} has a negative amount.`);
             }
-        console.log(`Transaction ID: ${transactions[i].id}, Amount: $${transactions[i].amount.toFixed(2)}`);
+        
     } catch (error) {
         console.error(`Error processing transaction at index ${i}: ${error.message}`);
-          
+          fail++;
+        continue;
     }
+    console.log(`Transaction ID: ${transactions[i].id}, Amount: $${transactions[i].amount.toFixed(2)}`);
+    succ++;
 }
+console.log(`Successful transactions: ${succ}`);
+console.log(`Failed transactions: ${fail}`);
