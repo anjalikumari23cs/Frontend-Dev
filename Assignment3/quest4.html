@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <frameset rows="80,*">
+        <frame name="top"
+            srcdoc="<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Nav</title></head><body><p><a href='#'>Home</a> | <a href='#'>About</a> | <a href='#'>Contact</a></p></body></html>">
+            <frame name="bottom"
+                srcdoc="<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Welcome</title></head><body><h2>Welcome to My Website</h2></body></html>">
+                <noframes>
+
+                    <body>Your browser does not support frames.</body>
+                </noframes>
+
+</body>
+
+</html>
